@@ -1,0 +1,48 @@
+name: CloudChamber
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+  xcodeVersion: "27.0"
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MACOSX_DEPLOYMENT_TARGET: "14.0"
+    SWIFT_STRICT_CONCURRENCY: minimal
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+
+targets:
+  CloudChamber:
+    type: application
+    platform: macOS
+    sources:
+      - path: CloudChamber
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.CloudChamber
+        PRODUCT_NAME: CloudChamber
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.education
+        INFOPLIST_KEY_NSHumanReadableCopyright: "Copyright © 2026 CloudChamber"
+        INFOPLIST_KEY_NSHighResolutionCapable: YES
+        ENABLE_APP_SANDBOX: NO
+        ENABLE_HARDENED_RUNTIME: NO
+        CODE_SIGN_STYLE: Automatic
+    scheme:
+      testTargets:
+        - CloudChamberTests
+      gatherCoverageData: false
+
+  CloudChamberTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - path: CloudChamberTests
+    dependencies:
+      - target: CloudChamber
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.CloudChamberTests
+        GENERATE_INFOPLIST_FILE: YES
