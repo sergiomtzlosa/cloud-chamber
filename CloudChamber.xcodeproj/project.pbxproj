@@ -11,6 +11,7 @@
 		0393BAA66C3FFD31444EDC0F /* ChamberSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E226727723EB2D9D6830ED3D /* ChamberSceneView.swift */; };
 		36430EB227D0EF37B55ECE39 /* ChamberGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF315C33EFC805D04F200A6 /* ChamberGeometry.swift */; };
 		3B5606CC325506DA0412B0E1 /* ConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED94F8FE1069942A30FBC083 /* ConfigurationTests.swift */; };
+		6DD10B20C373A028EFF2F439 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5FE2BE8658A29DF8F46CC3F /* Assets.xcassets */; };
 		7352699A74DFFB264BFC9B80 /* SimulationEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549A7ED0141977E81CAA7E7B /* SimulationEngineTests.swift */; };
 		836EF5D3F46F4609264BD9A4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7792B0606AB9530032E11F30 /* main.swift */; };
 		9147019B13F2C2161C30BED9 /* PhysicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873CB739053243F485334FCA /* PhysicsTests.swift */; };
@@ -52,17 +53,27 @@
 		C18B8F5C9A79329F04D2947C /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		DAF2541E1D159F766E4784F4 /* Physics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Physics.swift; sourceTree = "<group>"; };
 		E226727723EB2D9D6830ED3D /* ChamberSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChamberSceneView.swift; sourceTree = "<group>"; };
+		E5FE2BE8658A29DF8F46CC3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E620E254231A6E492B28BA66 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		ED94F8FE1069942A30FBC083 /* ConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		04CEE334570E75939BBA9DD8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E5FE2BE8658A29DF8F46CC3F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		1E1EE15C158AE6065F115B51 /* CloudChamber */ = {
 			isa = PBXGroup;
 			children = (
 				A652FDD801B309D86ED7AD7E /* AppDelegate.swift */,
 				7792B0606AB9530032E11F30 /* main.swift */,
 				B556F63A70670C17C8B1CD73 /* Model */,
+				04CEE334570E75939BBA9DD8 /* Resources */,
 				1F214549CF17BD1FDC358373 /* Simulation */,
 				7386A7811C41838DDABDAE39 /* UI */,
 			);
@@ -137,6 +148,7 @@
 			buildConfigurationList = 1198E114CBAF930DE16FE478 /* Build configuration list for PBXNativeTarget "CloudChamber" */;
 			buildPhases = (
 				62F62F88E36977037ACC80B0 /* Sources */,
+				1A2AF8F25B635F30FA49DE93 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -200,6 +212,17 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A2AF8F25B635F30FA49DE93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DD10B20C373A028EFF2F439 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		62F62F88E36977037ACC80B0 /* Sources */ = {
